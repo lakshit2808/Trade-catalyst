@@ -48,7 +48,7 @@ export const CollapseItems = ({icon, items, title}: Props) => {
                      <Text
                         span
                         weight={'normal'}
-                        size={'$base'}
+                        size={13}
                         css={{
                            color: '$accents9',
                         }}

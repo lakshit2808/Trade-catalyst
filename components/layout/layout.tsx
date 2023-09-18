@@ -15,14 +15,13 @@ const ComponentRender = ({children}: Props) =>
 {
    const session = useSession()
    {data:session}
-   if (session.data === null)
+   if (session.data !== null)
    {
       return <Login/>
    }
    else{
       return <AppLayout children = {children}/>
    }
-
 }
 
 

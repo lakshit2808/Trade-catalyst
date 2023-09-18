@@ -1,26 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Box} from '../styles/box';
 import {Sidebar} from './sidebar.styles';
 import {Avatar, Tooltip} from '@nextui-org/react';
 import {Flex} from '../styles/flex';
 import {CompaniesDropdown} from './companies-dropdown';
-import {HomeIcon} from '../icons/sidebar/home-icon';
-import {PaymentsIcon} from '../icons/sidebar/payments-icon';
-import {BalanceIcon} from '../icons/sidebar/balance-icon';
-import {AccountsIcon} from '../icons/sidebar/accounts-icon';
-import {CustomersIcon} from '../icons/sidebar/customers-icon';
-import {ProductsIcon} from '../icons/sidebar/products-icon';
-import {ReportsIcon} from '../icons/sidebar/reports-icon';
-import {DevIcon} from '../icons/sidebar/dev-icon';
-import {ViewIcon} from '../icons/sidebar/view-icon';
 import {SettingsIcon} from '../icons/sidebar/settings-icon';
-import {CollapseItems} from './collapse-items';
+// import {CollapseItems} from './collapse-items';
 import {SidebarItem} from './sidebar-item';
 import {SidebarMenu} from './sidebar-menu';
 import {FilterIcon} from '../icons/sidebar/filter-icon';
 import {useSidebarContext} from '../layout/layout-context';
-import {ChangeLogIcon} from '../icons/sidebar/changelog-icon';
 import {useRouter} from 'next/router';
+import { SiGoogleearthengine } from 'react-icons/si';
+import { RiRobot2Fill, RiDashboardFill } from 'react-icons/ri';
+import { FaMicrochip, FaMagnifyingGlassChart } from 'react-icons/fa6';
+import { BsFileEarmarkBarGraphFill, BsFillPieChartFill } from 'react-icons/bs';
+import { BiLinkAlt } from 'react-icons/bi';
+import { GiCardExchange, GiGreaseTrap } from 'react-icons/gi';
+import { ImMap } from 'react-icons/im';
+import { MdDeveloperBoard } from 'react-icons/md';
+
+
 
 export const SidebarWrapper = () => {
    const router = useRouter();
@@ -50,68 +50,72 @@ export const SidebarWrapper = () => {
                <Sidebar.Body className="body sidebar">
                   <SidebarItem
                      title="Home"
-                     icon={<HomeIcon />}
+                     icon={<RiDashboardFill />}
                      isActive={router.pathname === '/'}
                      href="/"
                   />
-                  <SidebarMenu title="Main Menu">
+                  <SidebarMenu title="Tools">
                      <SidebarItem
                         isActive={router.pathname === '/accounts'}
-                        title="Accounts"
-                        icon={<AccountsIcon />}
+                        title="HST Execution Engine"
+                        icon={<SiGoogleearthengine />}
                         href="accounts"
                      />
                      <SidebarItem
                         isActive={router.pathname === '/payments'}
-                        title="Payments"
-                        icon={<PaymentsIcon />}
+                        title="Instant Decision Triggers"
+                        icon={<RiRobot2Fill />}
                      />
-                     <CollapseItems
-                        icon={<BalanceIcon />}
-                        items={['Banks Accounts', 'Credit Cards', 'Loans']}
-                        title="Balances"
-                     />
-
                      <SidebarItem
                         isActive={router.pathname === '/customers'}
-                        title="Customers"
-                        icon={<CustomersIcon />}
+                        title="Smart Order Optimization"
+                        icon={<FaMicrochip />}
                      />
                      <SidebarItem
                         isActive={router.pathname === '/products'}
-                        title="Products"
-                        icon={<ProductsIcon />}
+                        title="Performance Review Hub"
+                        icon={<BsFileEarmarkBarGraphFill />}
                      />
                      <SidebarItem
                         isActive={router.pathname === '/reports'}
-                        title="Reports"
-                        icon={<ReportsIcon />}
-                     />
+                        title="Broker Bridge"
+                        icon={<BiLinkAlt />}
+                     />                     
                   </SidebarMenu>
 
-                  <SidebarMenu title="General">
+                  <SidebarMenu title="Strategy Analyzer">
                      <SidebarItem
                         isActive={router.pathname === '/developers'}
-                        title="Developers"
-                        icon={<DevIcon />}
+                        title="OI Analyser"
+                        icon={<ImMap />}
                      />
                      <SidebarItem
                         isActive={router.pathname === '/view'}
-                        title="View Test Data"
-                        icon={<ViewIcon />}
+                        title="Built-up Breadth"
+                        icon={<GiCardExchange />}
                      />
                      <SidebarItem
                         isActive={router.pathname === '/settings'}
-                        title="Settings"
-                        icon={<SettingsIcon />}
+                        title="Heat Map"
+                        icon={<MdDeveloperBoard />} 
                      />
                   </SidebarMenu>
 
-                  <SidebarMenu title="Updates">
+                  <SidebarMenu title="Position Guardians">
                      <SidebarItem
                         isActive={router.pathname === '/changelog'}
-                        title="Changelog"
-                        icon={<ChangeLogIcon />}
+                        title="Quick Liquidity Finder"
+                        icon={<FaMagnifyingGlassChart />}
+                     />
+                     <SidebarItem
+                        isActive={router.pathname === '/changelog'}
+                        title="Payoff Chart"
+                        icon={<BsFillPieChartFill />}
+                     />
+                     <SidebarItem
+                        isActive={router.pathname === '/changelog'}
+                        title="Trap Indicator"
+                        icon={<GiGreaseTrap />}
                      />
                   </SidebarMenu>
                </Sidebar.Body>

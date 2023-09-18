@@ -34,23 +34,23 @@ export const NotificationsDropdown = () => {
                <Dropdown.Item
                   key="1"
                   showFullDescription
-                  description="Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+                  description="Trade faster with AI alerts, automated orders, and advanced analytics."
                >
-                  📣 Edit your information
+                  📣 Real-Time Alerts for Pro Traders
                </Dropdown.Item>
                <Dropdown.Item
                   key="2"
                   showFullDescription
-                  description="Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+                  description="Use our tools for smart trading decisions and stay informed with custom alerts."
                >
-                  🚀 Say goodbye to paper receipts!
+                  🚀 Risk Management Made Easy!
                </Dropdown.Item>
                <Dropdown.Item
                   key="3"
                   showFullDescription
-                  description="Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+                  description="Swift execution, AI alerts, and risk tools for confident trading."
                >
-                  📣 Edit your information
+                  📣 Trade Smarter, Not Harder
                </Dropdown.Item>
             </Dropdown.Section>
          </Dropdown.Menu>
