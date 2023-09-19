@@ -1,14 +1,10 @@
 import React from 'react';
 import {Box} from '../styles/box';
 import {Sidebar} from './sidebar.styles';
-import {Avatar, Tooltip} from '@nextui-org/react';
 import {Flex} from '../styles/flex';
 import {CompaniesDropdown} from './companies-dropdown';
-import {SettingsIcon} from '../icons/sidebar/settings-icon';
-// import {CollapseItems} from './collapse-items';
 import {SidebarItem} from './sidebar-item';
 import {SidebarMenu} from './sidebar-menu';
-import {FilterIcon} from '../icons/sidebar/filter-icon';
 import {useSidebarContext} from '../layout/layout-context';
 import {useRouter} from 'next/router';
 import { SiGoogleearthengine } from 'react-icons/si';
@@ -56,82 +52,86 @@ export const SidebarWrapper = () => {
                   />
                   <SidebarMenu title="Tools">
                      <SidebarItem
-                        isActive={router.pathname === '/accounts'}
+                        isActive={router.pathname === '/hst-execution-engine'}
                         title="HST Execution Engine"
                         icon={<SiGoogleearthengine />}
-                        href="accounts"
+                        href="hst-execution-engine"
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/payments'}
+                        isActive={router.pathname === '/instant-decision-trigger'}
                         title="Instant Decision Triggers"
                         icon={<RiRobot2Fill />}
+                        href='instant-decision-trigger'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/customers'}
+                        isActive={router.pathname === '/smart-order-optimization'}
                         title="Smart Order Optimization"
                         icon={<FaMicrochip />}
+                        href='smart-order-optimization'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/products'}
+                        isActive={router.pathname === '/performance-review-hub'}
                         title="Performance Review Hub"
                         icon={<BsFileEarmarkBarGraphFill />}
+                        href='performance-review-hub'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/reports'}
+                        isActive={router.pathname === '/broker-bridge'}
                         title="Broker Bridge"
                         icon={<BiLinkAlt />}
+                        href='broker-bridge'
                      />                     
                   </SidebarMenu>
 
                   <SidebarMenu title="Strategy Analyzer">
                      <SidebarItem
-                        isActive={router.pathname === '/developers'}
+                        isActive={router.pathname === '/oi-analyser'}
                         title="OI Analyser"
                         icon={<ImMap />}
+                        href='oi-analyser'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/view'}
+                        isActive={router.pathname === '/built-up-breadth'}
                         title="Built-up Breadth"
                         icon={<GiCardExchange />}
+                        href='built-up-breadth'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/settings'}
+                        isActive={router.pathname === '/heat-map'}
                         title="Heat Map"
                         icon={<MdDeveloperBoard />} 
+                        href='heat-map'
                      />
                   </SidebarMenu>
 
                   <SidebarMenu title="Position Guardians">
                      <SidebarItem
-                        isActive={router.pathname === '/changelog'}
+                        isActive={router.pathname === '/quick-liquidity-finder'}
                         title="Quick Liquidity Finder"
                         icon={<FaMagnifyingGlassChart />}
+                        href='quick-liquidity-finder'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/changelog'}
+                        isActive={router.pathname === '/payoff-chart'}
                         title="Payoff Chart"
                         icon={<BsFillPieChartFill />}
+                        href='payoff-chart'
                      />
                      <SidebarItem
-                        isActive={router.pathname === '/changelog'}
+                        isActive={router.pathname === '/trap-indicator'}
                         title="Trap Indicator"
                         icon={<GiGreaseTrap />}
+                        href='trap-indicator'
                      />
                   </SidebarMenu>
                </Sidebar.Body>
                <Sidebar.Footer>
-                  <Tooltip content={'Settings'} rounded color="primary">
-                     <SettingsIcon />
-                  </Tooltip>
-                  <Tooltip content={'Adjustments'} rounded color="primary">
-                     <FilterIcon />
-                  </Tooltip>
-                  <Tooltip content={'Profile'} rounded color="primary">
+                  {/* <Tooltip content={'Profile'} rounded color="primary">
                      <Avatar
                         src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                         size={'sm'}
                      />
-                  </Tooltip>
+                  </Tooltip> */}
                </Sidebar.Footer>
             </Flex>
          </Sidebar>

@@ -1,14 +1,12 @@
 import {Input, Link, Navbar, Text} from '@nextui-org/react';
 import React from 'react';
-import {FeedbackIcon} from '../icons/navbar/feedback-icon';
-import {GithubIcon} from '../icons/navbar/github-icon';
 import {SupportIcon} from '../icons/navbar/support-icon';
 import {SearchIcon} from '../icons/searchicon';
 import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
 import {BurguerButton} from './burguer-button';
 import {NotificationsDropdown} from './notifications-dropdown';
 import {UserDropdown} from './user-dropdown';
+import {SettingsIcon} from '../icons/sidebar/settings-icon';
 
 interface Props {
    children: React.ReactNode;
@@ -97,6 +95,11 @@ export const NavbarWrapper = ({children}: Props) => {
 
                <Navbar.Content>
                   <NotificationsDropdown />
+               </Navbar.Content>
+               <Navbar.Content>
+            
+                     <SettingsIcon />
+              
                </Navbar.Content>
 
                <Navbar.Content hideIn={'md'}>
