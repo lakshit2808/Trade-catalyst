@@ -28,7 +28,10 @@ class MyDocument extends Document {
                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
                rel="stylesheet"
             />
-            <Head>{CssBaseline.flush()}</Head>
+            <Head>
+               {CssBaseline.flush()}
+               <script type="text/javascript" src="https://s3.tradingview.com/tv.js"/>
+               </Head>
 
             <body>
                <Main />

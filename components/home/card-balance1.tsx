@@ -1,8 +1,8 @@
 import {Card, Text} from '@nextui-org/react';
 import React from 'react';
-import {Community} from '../icons/community';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
+import { CiMoneyBill } from 'react-icons/ci';
 
 export const CardBalance1 = () => {
    return (
@@ -16,13 +16,13 @@ export const CardBalance1 = () => {
       >
          <Card.Body css={{py: '$10'}}>
             <Flex css={{gap: '$5'}}>
-               <Community />
+               <CiMoneyBill size={"2rem"} />
                <Flex direction={'column'}>
                   <Text span css={{color: 'white'}}>
-                     Auto Insurance
+                     Funds Available
                   </Text>
                   <Text span css={{color: 'white'}} size={'$xs'}>
-                     1311 Cars
+                     3 Broker Connected
                   </Text>
                </Flex>
             </Flex>
@@ -33,7 +33,7 @@ export const CardBalance1 = () => {
                   css={{color: 'white'}}
                   weight={'semibold'}
                >
-                  $45,910
+                  ₹45,910
                </Text>
                <Text span css={{color: '$green600'}} size={'$xs'}>
                   + 4.5%
@@ -41,42 +41,34 @@ export const CardBalance1 = () => {
             </Flex>
             <Flex css={{gap: '$12'}} align={'center'}>
                <Box>
+                  <div className='home-text-title'>Trading Turnover</div>
                   <Text
                      span
                      size={'$xs'}
                      css={{color: '$green600'}}
                      weight={'semibold'}
                   >
-                     {'↓'}
+                     {/* {'↓'} */}
+                     {'↑'}
                   </Text>
                   <Text span size={'$xs'} css={{color: '$white'}}>
-                     100,930 USD
+                     100,930
                   </Text>
                </Box>
                <Box>
+               <div className='home-text-title'>24h Change</div>
                   <Text
                      span
                      size={'$xs'}
-                     css={{color: '$red600'}}
+                     // css={{color: '$red600'}}
+                     css={{color: '$green600'}}
                      weight={'semibold'}
                   >
                      {'↑'}
                   </Text>
+               
                   <Text span size={'$xs'} css={{color: '$white'}}>
-                     54,120 USD
-                  </Text>
-               </Box>
-               <Box>
-                  <Text
-                     span
-                     size={'$xs'}
-                     css={{color: '$green600'}}
-                     weight={'semibold'}
-                  >
-                     {'⭐'}
-                  </Text>
-                  <Text span size={'$xs'} css={{color: '$white'}}>
-                     125 VIP
+                     2065.95
                   </Text>
                </Box>
             </Flex>

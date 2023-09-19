@@ -1,8 +1,8 @@
 import {Card, Text} from '@nextui-org/react';
 import React from 'react';
-import {Community} from '../icons/community';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
+import { BsBatteryCharging } from 'react-icons/bs';
 
 export const CardBalance3 = () => {
    return (
@@ -16,13 +16,13 @@ export const CardBalance3 = () => {
       >
          <Card.Body css={{py: '$10'}}>
             <Flex css={{gap: '$5'}}>
-               <Community />
+               <BsBatteryCharging size={"2rem"}/>
                <Flex direction={'column'}>
-                  <Text span css={{color: 'white'}}>
-                     Balance Insurance
+                  <Text span css={{color: 'white', fontSize:".8rem"}}>
+                     Resource Utilization
                   </Text>
                   <Text span css={{color: 'white'}} size={'$xs'}>
-                     1311 Cars
+                     7 Tools are in Use
                   </Text>
                </Flex>
             </Flex>
@@ -33,50 +33,29 @@ export const CardBalance3 = () => {
                   css={{color: 'white'}}
                   weight={'semibold'}
                >
-                  $3,910
+                  ₹1,910
                </Text>
                <Text span css={{color: '$red600'}} size={'$xs'}>
-                  + 4.5%
+                  Bill Due
                </Text>
             </Flex>
             <Flex css={{gap: '$12'}} align={'center'}>
                <Box>
-                  <Text
-                     span
-                     size={'$xs'}
-                     css={{color: '$red600'}}
-                     weight={'semibold'}
-                  >
-                     {'↓'}
-                  </Text>
+               <div className='home-text-title'>Tools</div>
                   <Text span size={'$xs'} css={{color: '$white'}}>
-                     100,930 USD
+                     510
                   </Text>
                </Box>
                <Box>
-                  <Text
-                     span
-                     size={'$xs'}
-                     css={{color: '$red600'}}
-                     weight={'semibold'}
-                  >
-                     {'↑'}
-                  </Text>
+               <div className='home-text-title'>Strategy Analyzer</div>
                   <Text span size={'$xs'} css={{color: '$white'}}>
-                     54,120 USD
+                    1302
                   </Text>
                </Box>
                <Box>
-                  <Text
-                     span
-                     size={'$xs'}
-                     css={{color: '$green600'}}
-                     weight={'semibold'}
-                  >
-                     {'⭐'}
-                  </Text>
+               <div className='home-text-title'>Position Guardians</div>
                   <Text span size={'$xs'} css={{color: '$white'}}>
-                     125 VIP
+                     98
                   </Text>
                </Box>
             </Flex>
