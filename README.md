@@ -12,13 +12,9 @@ Key Features:
 * Risk Management Tools: Offer specialized risk management calculators such as Quick Liquidity Finder, Payoff Chart Builder, etc to assist traders in effectively mitigating risk and managing their positions.
 * Customizable Market Alerts: Enable traders to configure personalized market alerts for specific events, further facilitating timely decision-making and strategy execution.
   
+
+For Run
 ```
-## For Run
-
-Install dependencies
-
-    
-```bash
 npm install
 ```
 
