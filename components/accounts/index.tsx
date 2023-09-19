@@ -13,7 +13,13 @@ import {Flex} from '../styles/flex';
 import {TableWrapper} from '../table/table';
 import {AddUser} from './add-user';
 
-export const Accounts = () => {
+
+interface Props
+{
+   section_name: string
+}
+
+export const Accounts = ({section_name}: Props) => {
    return (
       <Flex
          css={{
@@ -46,7 +52,7 @@ export const Accounts = () => {
             </Crumb>
          </Breadcrumbs>
 
-         <Text h3>All Accounts</Text>
+         <Text h3>{section_name}</Text>
          <Flex
             css={{gap: '$8'}}
             align={'center'}

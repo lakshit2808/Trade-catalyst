@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Quick_Liquidity_Finder() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Quick Liquidity Finder"/></div>
   )
 }
 

@@ -1,6 +1,7 @@
 import {Avatar, Dropdown, Navbar, Text} from '@nextui-org/react';
 import React from 'react';
 import {DarkModeSwitch} from './darkmodeswitch';
+import { signOut } from 'next-auth/react';
 
 export const UserDropdown = () => {
    return (
@@ -41,7 +42,7 @@ export const UserDropdown = () => {
                Help & Feedback
             </Dropdown.Item>
             <Dropdown.Item key="logout" withDivider color="error">
-               Log Out
+               <div onClick={signOut}>Log Out</div>
             </Dropdown.Item>
             <Dropdown.Item key="switch" withDivider>
                <DarkModeSwitch />

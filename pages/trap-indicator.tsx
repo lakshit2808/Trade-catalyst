@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Trap_Indicator() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Trap Indicator"/></div>
   )
 }
 

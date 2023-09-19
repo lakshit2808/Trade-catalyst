@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function HST_Execution_Engine() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "HST Execution Engine"/></div>
   )
 }
 

@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Smart_Order_Optimization() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Smart Order Optimization"/></div>
   )
 }
 

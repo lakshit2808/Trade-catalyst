@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Built_up_Breadth() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Built-up Breadth"/></div>
   )
 }
 

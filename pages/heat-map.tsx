@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Heat_Map() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Heat Map"/></div>
   )
 }
 

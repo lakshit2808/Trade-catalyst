@@ -1,12 +1,10 @@
-import {Dropdown, Text} from '@nextui-org/react';
-import React, {useState} from 'react';
+import {Text} from '@nextui-org/react';
+import React from 'react';
 import {AcmeIcon} from '../icons/acme-icon';
-import {AcmeLogo} from '../icons/acmelogo';
-import {BottomIcon} from '../icons/sidebar/bottom-icon';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
-import Image from 'next/image';
-import platform_logo from "./../../assets/logo.png"
+import { useRouter } from 'next/router';
+import { useSession } from 'next-auth/react';
 
 interface Platform
 {
@@ -15,10 +13,15 @@ interface Platform
 }
 export const CompaniesDropdown = () => {
 
+   const router =  useRouter();
+   const session = useSession();
+   {data:session}
+
    const platform: Platform = {
       name: "Trade Catalyst",
       logo: <AcmeIcon/>,
    }
+
    return (
       <Box>
       <Flex align={'center'} css={{gap: '$7'}}>
@@ -43,7 +46,7 @@ export const CompaniesDropdown = () => {
                size={'$xs'}
                css={{color: '$accents8'}}
             >
-               Hello, James!
+               Hello, {session.data?.user?.name}!
             </Text>
          </Box>
       </Flex>

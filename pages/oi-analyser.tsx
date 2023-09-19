@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function OI_Analyser() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "OI Analyser"/></div>
   )
 }
 

@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Broker_Bridge() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Broker Bridge"/></div>
   )
 }
 

@@ -3,7 +3,7 @@ import { Accounts } from '../components/accounts'
 
 function Performance_Review_Hub() {
   return (
-    <div><Accounts/></div>
+    <div><Accounts section_name = "Performance Review Hub"/></div>
   )
 }
 
