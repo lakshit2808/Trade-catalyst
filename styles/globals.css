@@ -13,3 +13,106 @@ body {
    font-size:.65rem !important ;
    font-weight: 800;
 }
+
+/* OptionTradeForm.css */
+
+/* Form container styles */
+.option-trade-form {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 10px;
+   background: linear-gradient(45deg, #00000000, #0b103000);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   color: #fff;
+ }
+ 
+ /* Form group styles */
+ .form-group {
+   margin-bottom: 15px;
+ }
+ 
+ /* Label styles */
+ label {
+   font-weight: bold;
+   display: block;
+   margin-bottom: 5px;
+   color: #fff;
+ }
+ 
+ /* Input field styles */
+ input[type="text"],
+ input[type="number"],
+ select {
+   width: 100%;
+   padding: 12px;
+   border: none;
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.1);
+   color: #fff;
+   font-size: 16px;
+ }
+ 
+ select:focus {
+   background-color: #333; /* Change to your desired color */
+   color: #fff; /* Change to your desired text color */
+ }
+ 
+ /* Select dropdown arrow styles */
+ select {
+   appearance: none;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4' viewBox='0 0 8 4'%3E%3Cpath fill='%23fff' d='M4 4L0 0h8z'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   background-position: right 10px center;
+   background-size: 8px 4px;
+ }
+ 
+ /* Button styles */
+ button {
+   padding: 12px 20px;
+   background-color: #3f51b5;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.2s ease;
+ }
+ 
+ button:hover {
+   background-color: #303f9f;
+ }
+ 
+ /* Strong text styles */
+ strong {
+   font-weight: bold;
+   color: #fff;
+ }
+ 
+ /* N/A text styles */
+ .na-text {
+   font-style: italic;
+   color: #ccc;
+ }
+ 
+ /* Error message styles */
+ .error-message {
+   color: #ff5722;
+   font-size: 14px;
+   margin-top: 5px;
+ }
+ 
+ /* Additional styles for better spacing and alignment */
+ .form-group:last-child {
+   margin-bottom: 0;
+ }
+ 
+ /* Add more custom styles as needed */
+ 
+ /* Media query for responsive design */
+ @media (max-width: 768px) {
+   .option-trade-form {
+     max-width: 100%;
+   }
+ }
+ 

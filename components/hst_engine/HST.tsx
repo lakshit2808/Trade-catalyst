@@ -5,6 +5,7 @@ import {Breadcrumbs, Crumb, CrumbLink} from '../breadcrumb/breadcrumb.styled';
 import {Flex} from '../styles/flex';
 import { SiGoogleearthengine } from 'react-icons/si';
 import { AiFillHome } from 'react-icons/ai';
+import OptionTradeForm from "./OptionTradeForm"
 
 function HST() {
   return (
@@ -35,6 +36,7 @@ function HST() {
                <CrumbLink href="#">HST Engine</CrumbLink>
             </Crumb>
          </Breadcrumbs>
+         <OptionTradeForm/>
       </Flex>
     </div>
   )

@@ -6,6 +6,7 @@ import {Layout} from '../components/layout/layout';
 import {SessionProvider} from "next-auth/react"
 import { Session } from "next-auth";
 
+
 const lightTheme = createTheme({
    type: 'light',
    theme: {
