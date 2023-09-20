@@ -1,5 +1,13 @@
 # Trade Catalyst
 
+For Demo: [https://tradecatalyst.netlify.app/](https://tradecatalyst.netlify.app/)
+
+Dummy Credentials
+> Email: lakshit@mail.com
+> Password: 123123
+
+Details:
+
 This application is a comprehensive solution tailored to the unique needs of options day traders. The Application aims to enable traders to swiftly execute trades, maintain precision in their strategy implementation, and maintain discipline in their trading practices. This application's innovative features and intuitive interface are meticulously designed to address the multifaceted challenges faced by options day traders.
 
 Key Features:
