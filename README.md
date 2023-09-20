@@ -11,7 +11,19 @@ Key Features:
 * Real-time Market Data Integration: Seamless integration with reliable real-time market data sources ensures traders remain well-informed about price movements and market conditions.
 * Risk Management Tools: Offer specialized risk management calculators such as Quick Liquidity Finder, Payoff Chart Builder, etc to assist traders in effectively mitigating risk and managing their positions.
 * Customizable Market Alerts: Enable traders to configure personalized market alerts for specific events, further facilitating timely decision-making and strategy execution.
-  
+
+Use Cases:
+
+* Swift Trading: Execute trades quickly in response to market opportunities.
+* Real-time Alerts: Receive AI-powered alerts for timely decision-making.
+* Automated Risk Management: Set automated stop-loss and take-profit orders for risk control.
+* Performance Analysis: Assess and improve trading strategies with advanced analytics.
+* Market Insights: Stay informed about market conditions and price movements.
+* Custom Alerts: Configure personalized alerts for specific trading events.
+* High-frequency Trading: Cater to high-frequency traders for rapid execution.
+* Options Strategy Testing: Test and optimize options trading strategies.
+* Professional Trading: Streamline professional trading activities.
+* Portfolio Management: Effectively manage diversified options portfolios.  
 
 For Run
 ```
