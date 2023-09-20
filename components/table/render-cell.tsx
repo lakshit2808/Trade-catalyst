@@ -73,9 +73,9 @@ export const RenderCell = ({user, columnKey}: Props) => {
                </Col>
                <Col css={{d: 'flex'}}>
                   <Tooltip
-                     content="Delete user"
+                     content="Close Position"
                      color="error"
-                     onClick={() => console.log('Delete user', user.id)}
+                     onClick={() => console.log('Close Position', user.id)}
                   >
                      <IconButton>
                         <DeleteIcon size={20} fill="#FF0080" />

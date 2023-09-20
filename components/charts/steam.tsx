@@ -4,12 +4,12 @@ import Chart, {Props} from 'react-apexcharts';
 
 const state: Props['series'] = [
    {
-      name: 'Series1',
-      data: [31, 40, 28, 51, 42, 109, 100],
+      name: 'Portfolio Growth',
+      data: [50000, 40000, 52300, 60000, 62000, 55000, 72000],
    },
    {
-      name: 'Series2',
-      data: [11, 32, 45, 32, 34, 52, 41],
+      name: 'PNL Growth',
+      data: [2500, 2300, 2600, 3200, 3300, 2550, 4300],
    },
 ];
 
@@ -36,7 +36,7 @@ const options: Props['options'] = {
    },
 
    xaxis: {
-      categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+      categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
       labels: {
          // show: false,
          style: {

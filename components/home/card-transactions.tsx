@@ -29,118 +29,71 @@ export const CardTransactions = () => {
                direction={'column'}
             >
                <Flex css={{gap: '$6'}} align={'center'} justify="between">
-                  <Avatar
-                     size="lg"
-                     pointer
-                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                     bordered
-                     color="gradient"
-                     stacked
-                  />
                   <Text span size={'$base'} weight={'semibold'}>
-                     Jose Perez
+                  Nifty 17000 CE
                   </Text>
                   <Text span css={{color: '$green600'}} size={'$xs'}>
-                     4500 USD
+                     +4500
                   </Text>
                   <Text span css={{color: '$accents8'}} size={'$xs'}>
-                     9/20/2021
+                     9/20/2023
                   </Text>
                </Flex>
 
                <Flex css={{gap: '$6'}} align={'center'} justify="between">
-                  <Avatar
-                     size="lg"
-                     pointer
-                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                     bordered
-                     color="gradient"
-                     stacked
-                  />
                   <Text span size={'$base'} weight={'semibold'}>
-                     Andrew Steven
+                  BankNifty 43000 PE
                   </Text>
                   <Text span css={{color: '$green600'}} size={'$xs'}>
-                     4500 USD
+                     +4500
                   </Text>
                   <Text span css={{color: '$accents8'}} size={'$xs'}>
-                     9/20/2021
+                     9/17/2023
                   </Text>
                </Flex>
                <Flex css={{gap: '$6'}} align={'center'} justify="between">
-                  <Avatar
-                     size="lg"
-                     pointer
-                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                     bordered
-                     color="gradient"
-                     stacked
-                  />
                   <Text span size={'$base'} weight={'semibold'}>
-                     Ruben Garcia
+                  Nifty 19500 PE
                   </Text>
                   <Text span css={{color: '$green600'}} size={'$xs'}>
-                     1500 USD
+                     +1500
                   </Text>
                   <Text span css={{color: '$accents8'}} size={'$xs'}>
-                     2/20/2022
+                     9/13/2023
                   </Text>
                </Flex>
                <Flex css={{gap: '$6'}} align={'center'} justify="between">
-                  <Avatar
-                     size="lg"
-                     pointer
-                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                     bordered
-                     color="gradient"
-                     stacked
-                  />
                   <Text span size={'$base'} weight={'semibold'}>
-                     Perla Garcia
+                  BankNifty 46000 CE
                   </Text>
                   <Text span css={{color: '$green600'}} size={'$xs'}>
-                     200 USD
+                     +200
                   </Text>
                   <Text span css={{color: '$accents8'}} size={'$xs'}>
-                     3/20/2022
+                     9/10/2023
                   </Text>
                </Flex>
                <Flex css={{gap: '$6'}} align={'center'} justify="between">
-                  <Avatar
-                     size="lg"
-                     pointer
-                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                     bordered
-                     color="gradient"
-                     stacked
-                  />
                   <Text span size={'$base'} weight={'semibold'}>
-                     Mathew Funez
+                  BankNifty 44000 CE
                   </Text>
                   <Text span css={{color: '$green600'}} size={'$xs'}>
-                     2444 USD
+                    +2444
                   </Text>
                   <Text span css={{color: '$accents8'}} size={'$xs'}>
-                     5/20/2022
+                     9/14/2023
                   </Text>
                </Flex>
                <Flex css={{gap: '$6'}} align={'center'} justify="between">
-                  <Avatar
-                     size="lg"
-                     pointer
-                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                     bordered
-                     color="gradient"
-                     stacked
-                  />
+
                   <Text span size={'$base'} weight={'semibold'}>
-                     Carlos Diaz
+                  Nifty 16050 CE
                   </Text>
                   <Text span css={{color: '$green600'}} size={'$xs'}>
-                     3000 USD
+                     +3000
                   </Text>
                   <Text span css={{color: '$accents8'}} size={'$xs'}>
-                     12/20/2022
+                     9/10/2023
                   </Text>
                </Flex>
             </Flex>

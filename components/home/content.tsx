@@ -10,6 +10,8 @@ import {CardBalance2} from './card-balance2';
 import {CardBalance3} from './card-balance3';
 import {CardAgents} from './card-agents';
 import {CardTransactions} from './card-transactions';
+import TechnicalAnalysis from './widgets/technicalanalysis';
+import Swot from './widgets/swot';
 
 const Chart = dynamic(
    () => import('../charts/steam').then((mod) => mod.Steam),
@@ -122,7 +124,7 @@ export const Content = () => (
                   },
                }}
             >
-               Section
+               Report
             </Text>
             <Flex
                direction={'column'}
@@ -140,7 +142,9 @@ export const Content = () => (
                   },
                }}
             >
-               <CardAgents />
+               {/* <CardAgents /> */}
+               <Swot/>
+               <TechnicalAnalysis/>
                <CardTransactions />
             </Flex>
          </Box>
@@ -168,7 +172,7 @@ export const Content = () => (
                   },
                }}
             >
-               Latest Users
+               All Transaction
             </Text>
             <NextLink href="/accounts">
                <Link
