@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function Broker_Bridge() {
   return (
-    <div><Accounts section_name = "Broker Bridge"/></div>
+    <div>
+      <ComingSoon/>
+    </div>
   )
 }
 

@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function OI_Analyser() {
   return (
-    <div><Accounts section_name = "OI Analyser"/></div>
+    <div>
+      <ComingSoon/>
+    </div>
   )
 }
 

@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function Smart_Order_Optimization() {
   return (
-    <div><Accounts section_name = "Smart Order Optimization"/></div>
+    <div>
+      <ComingSoon/>
+    </div>
   )
 }
 

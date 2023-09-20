@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function Payoff_Chart() {
   return (
-    <div><Accounts section_name = "Payoff Chart"/></div>
+    <div>
+      <ComingSoon/>
+    </div>
   )
 }
 

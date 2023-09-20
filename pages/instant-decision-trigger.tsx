@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function Instant_Decision_Triggers() {
   return (
-    <div><Accounts section_name = "Instant Decision Trigger"/></div>
+    <div>
+      <ComingSoon/>
+    </div>
   )
 }
 

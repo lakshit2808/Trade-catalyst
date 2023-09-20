@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function Quick_Liquidity_Finder() {
   return (
-    <div><Accounts section_name = "Quick Liquidity Finder"/></div>
+    <div>
+      <ComingSoon/>
+    </div>
   )
 }
 

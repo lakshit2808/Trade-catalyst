@@ -1,9 +1,11 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import ComingSoon from '../components/comingsoon/ComingSoon'
 
 function Trap_Indicator() {
   return (
-    <div><Accounts section_name = "Trap Indicator"/></div>
+      <div>
+        <ComingSoon/>
+      </div>
   )
 }
 

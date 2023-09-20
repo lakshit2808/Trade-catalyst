@@ -1,0 +1,11 @@
+/* ComingSoon.module.css */
+
+.centeredContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures that the container covers the entire viewport height */
+    text-align: center;
+  }
+
