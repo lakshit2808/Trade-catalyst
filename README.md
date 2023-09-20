@@ -1,15 +1,14 @@
 # Trade Catalyst
 
-
 For Demo: [https://tradecatalyst.netlify.app/](https://tradecatalyst.netlify.app/)
 
-Dummy Credentials :
+Dummy Credentials
 > Email: lakshit@mail.com
 > Password: 123123
 
 Details:
 
-This application is a comprehensive solution tailored to the unique needs of options day traders. The Application aims to enable traders to swiftly execute trades, maintain precision in their strategy implementation, and maintain discipline in their trading practices. This application's innovative features and intuitive interface are meticulously designed to address the multifaceted challenges faced by option day traders.
+This application is a comprehensive solution tailored to the unique needs of options day traders. The Application aims to enable traders to swiftly execute trades, maintain precision in their strategy implementation, and maintain discipline in their trading practices. This application's innovative features and intuitive interface are meticulously designed to address the multifaceted challenges faced by options day traders.
 
 Key Features:
 
@@ -20,7 +19,6 @@ Key Features:
 * Real-time Market Data Integration: Seamless integration with reliable real-time market data sources ensures traders remain well-informed about price movements and market conditions.
 * Risk Management Tools: Offer specialized risk management calculators such as Quick Liquidity Finder, Payoff Chart Builder, etc to assist traders in effectively mitigating risk and managing their positions.
 * Customizable Market Alerts: Enable traders to configure personalized market alerts for specific events, further facilitating timely decision-making and strategy execution.
-* Quick decision making interface .
 
 Use Cases:
 
@@ -34,7 +32,15 @@ Use Cases:
 * Options Strategy Testing: Test and optimize options trading strategies.
 * Professional Trading: Streamline professional trading activities.
 * Portfolio Management: Effectively manage diversified options portfolios.
+  
+Tech Stack:
 
+* Frontend: Next.js for the web application's frontend.
+* Backend: Python and Nodejs for server-side logic and data processing.
+* Analytics: Use C++ for high-performance analytics and data crunching.
+* MongoDB: For storing complex financial data, user profiles, and trading history
+* Redis: For caching real-time market data and improving application performance through fast data retrieval.
+* Data Structures & Algorithms (DSA): Implement efficient data structures and algorithms for real-time data processing and analytics.
 
 For Run
 ```
@@ -50,4 +56,3 @@ npm run dev
 ```
 
 Now you can visit https://localhost:3000 in your browser.
-
