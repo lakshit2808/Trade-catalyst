@@ -30,7 +30,7 @@ class MyDocument extends Document {
             />
             <Head>
                {CssBaseline.flush()}
-               <script type="text/javascript" src="https://s3.tradingview.com/tv.js"/>
+               {/* <script type="text/javascript" src="https://s3.tradingview.com/tv.js"/> */}
                </Head>
 
             <body>

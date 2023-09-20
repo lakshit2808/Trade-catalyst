@@ -2,31 +2,32 @@ import React from 'react';
 import { useSession } from 'next-auth/react';
 import AppLayout from './AppLayout';
 import { useRouter } from 'next/router';
-interface Props {
-   children: React.ReactNode;
+
+interface ComponentRenderProps {
+  children: React.ReactNode;
 }
 
-const ComponentRender = ({children}: Props) =>
-{
-   // const router =  useRouter();
-   // const session = useSession()
-   // {data:session}
+const ComponentRender: React.FC<ComponentRenderProps> = ({ children }) => {
+  const router = useRouter();
+  const { data: session } = useSession();
 
-   // if (session.data === null)
-   // {
-   //    router.push("/api/auth/signin")
-   // }
-   // else{
-   //    return <AppLayout children = {children}/>
-   // }
-   // return null;
-
-   return <AppLayout children = {children}/>
+  if (session === null) {
+    router.push("/api/auth/signin");
+    return null;
+  } else {
+    return <AppLayout>{children}</AppLayout>;
+  }
+  // return <AppLayout>{children}</AppLayout>;
 }
 
+interface LayoutProps {
+  children: React.ReactNode;
+}
 
-export const Layout = ({children}: Props) => {
-   return (
-      <ComponentRender children = {children}/>
-   );
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <ComponentRender>
+      {children}
+    </ComponentRender>
+  );
 };
