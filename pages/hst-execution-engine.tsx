@@ -1,9 +1,9 @@
 import React from 'react'
-import { Accounts } from '../components/accounts'
+import HST from '../components/hst_engine/HST'
 
 function HST_Execution_Engine() {
   return (
-    <div><Accounts section_name = "HST Execution Engine"/></div>
+    <div><HST/></div>
   )
 }
 
