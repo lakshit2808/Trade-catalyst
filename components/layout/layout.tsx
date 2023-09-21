@@ -8,16 +8,16 @@ interface ComponentRenderProps {
 }
 
 const ComponentRender: React.FC<ComponentRenderProps> = ({ children }) => {
-  // const router = useRouter();
-  // const { data: session } = useSession();
+  const router = useRouter();
+  const { data: session } = useSession();
 
-  // if (session === null) {
-  //   router.push("/api/auth/signin");
-  //   return null;
-  // } else {
-  //   return <AppLayout>{children}</AppLayout>;
-  // }
-  return <AppLayout>{children}</AppLayout>;
+  if (session === null) {
+    router.push("/api/auth/signin");
+    return null;
+  } else {
+    return <AppLayout>{children}</AppLayout>;
+  }
+  // return <AppLayout>{children}</AppLayout>;
 }
 
 interface LayoutProps {

@@ -1,6 +1,8 @@
+'use client'
 import React, { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import Alert from '../utils/alert/Alert';
 
 
 
@@ -125,10 +127,10 @@ const OptionTradeForm = () => {
           </div>
 
           <div className="form-group">
-            <strong>Max Loss:</strong> {maxLoss !== null ? `$${maxLoss}` : 'N/A'}
+            <strong>Max Loss:</strong> {maxLoss !== null ? `₹${maxLoss}` : 'N/A'}
           </div>
           <div className="form-group">
-            <strong>Max Profit:</strong> {maxProfit !== null ? `$${maxProfit}` : 'N/A'}
+            <strong>Max Profit:</strong> {maxProfit !== null ? `₹${maxProfit}` : 'N/A'}
           </div>
 
           <div className="form-group">
@@ -143,7 +145,8 @@ const OptionTradeForm = () => {
                 maxLoss,
                 maxProfit,
               };
-              alert(JSON.stringify(values, null, 2)); // You can adjust how you want to handle this data
+              console.log(JSON.stringify(values, null, 2)); // You can adjust how you want to handle this data
+              alert("HST Engine Has been Configured")
             }}>
               Configure
             </button>
