@@ -12,7 +12,7 @@ export const authConfig: NextAuthOptions = {
           type: "email",
           placeholder: "alex.example.com",
         },
-        password: { label: "Password", type: "password" },
+        password: { label: "Password", type: "password", placeholder: "********"},
       },
       async authorize(credentials) {
         interface DB_User {
