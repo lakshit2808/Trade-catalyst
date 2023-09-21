@@ -43,6 +43,10 @@ Tech Stack:
 * Data Structures & Algorithms (DSA): Implement efficient data structures and algorithms for real-time data processing and analytics.
 
 For Run
+
+Comment down `// NEXTAUTH_URL=tradecatalyst.netlify.app` in `.env.local`
+and `// secret: process.env.NEXTAUTH_URL` in  `pages/api/auth/[...nextauth].tsx`
+
 ```
 npm install
 ```
