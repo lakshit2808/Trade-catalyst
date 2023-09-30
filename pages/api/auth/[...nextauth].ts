@@ -34,6 +34,12 @@ export const authConfig: NextAuthOptions = {
             email: "lakshit@mail.com",
             password: "123123",
           },
+          {
+            id: "3",
+            name: "Mukul",
+            email: "mukul@mail.com",
+            password: "mukul@123",
+          },
 
         ];
 
